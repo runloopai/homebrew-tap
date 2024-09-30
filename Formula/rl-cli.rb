@@ -9,16 +9,14 @@ class RlCli < Formula
 
   depends_on "python@3.12"
 
-
-  # For 'runloop-api-client', please provide the URL and SHA256 if it's hosted on PyPI or another source.
   resource "runloop-api-client" do
     url "https://files.pythonhosted.org/packages/ea/cd/9db6d02626d4244258bf4368a979335ef8b9ab4df4b6725d00f0e855c345/runloop_api_client-0.1.0a20.tar.gz"
     sha256 "21f830549ce8ab090ac73a5fe17e2f0635bd5717849334164e26daa3b54ba628"
   end
   
   resource "annotated-types" do
-    url "https://files.pythonhosted.org/packages/source/a/annotated-types/annotated-types-0.7.0.tar.gz"
-    sha256 "19d2cf6db31ab72d819e5dc0bfe703d195a375192d52175d171485834c75e9d8"
+    url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
+    sha256 "aff07c09a53a08bc8cfccb9c85b05f1aa9a2a6f23728d790723543408344ce89"
   end
 
   resource "anyio" do
