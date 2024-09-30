@@ -8,6 +8,7 @@ class RlCli < Formula
   license "MIT"
 
   depends_on "python@3.12"
+  depends_on "rust" => :build  # Needed to build pydantic-core from source
 
   resource "runloop-api-client" do
     url "https://files.pythonhosted.org/packages/ea/cd/9db6d02626d4244258bf4368a979335ef8b9ab4df4b6725d00f0e855c345/runloop_api_client-0.1.0a20.tar.gz"
@@ -64,10 +65,10 @@ class RlCli < Formula
     sha256 "73ee9fddd406dc318b885c7a2eab8a6472b68b8fb5ba8150949fc3db939f23c8"
   end
 
-  # resource "pydantic-core" do
-  #   url "https://files.pythonhosted.org/packages/73/73/0c7265903f66cce39ed7ca939684fba344210cefc91ccc999cfd5b113fd3/pydantic_core-2.20.1-pp310-pypy310_pp73-macosx_10_12_x86_64.whl"
-  #   sha256 "a45f84b09ac9c3d35dfcf6a27fd0634d30d183205230a0ebe8373a0e8cfa0906"
-  # end
+  resource "pydantic-core" do
+    url "https://files.pythonhosted.org/packages/12/e3/0d5ad91211dba310f7ded335f4dad871172b9cc9ce204f5a56d76ccd6247/pydantic_core-2.20.1.tar.gz"
+    sha256 "26ca695eeee5f9f1aeeb211ffc12f10bcb6f71e2989988fda61dabd65db878d4"
+  end
 
   resource "requests" do
     url "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl"
@@ -96,6 +97,9 @@ class RlCli < Formula
 
   def install
     virtualenv_install_with_resources
+    
+    # Post-install check
+    system "#{libexec}/bin/python", "-c", "import pydantic_core"
   end
 
   test do
