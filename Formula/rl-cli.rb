@@ -14,7 +14,8 @@ class RlCli < Formula
     url "https://files.pythonhosted.org/packages/ea/cd/9db6d02626d4244258bf4368a979335ef8b9ab4df4b6725d00f0e855c345/runloop_api_client-0.1.0a20.tar.gz"
     sha256 "21f830549ce8ab090ac73a5fe17e2f0635bd5717849334164e26daa3b54ba628"
   end
-    resource "annotated-types" do
+
+  resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl"
     sha256 "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
   end
