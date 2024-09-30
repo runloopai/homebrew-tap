@@ -20,8 +20,8 @@ class RlCli < Formula
   end
 
   resource "anyio" do
-    url "https://files.pythonhosted.org/packages/source/a/anyio/anyio-4.4.0.tar.gz"
-    sha256 "a0b119f31fa5005e7fe8802d50a65c7b1dd3a89a01520a46a64e9318c4d436c0"
+    url "https://files.pythonhosted.org/packages/e6/e3/c4c8d473d6780ef1853d630d581f70d655b4f8d7553c6997958c283039a2/anyio-4.4.0.tar.gz"
+    sha256 "5aadc6a1bbb7cdb0bede386cac5e2940f5e2ff3aa20277e991cf028e0585ce94"
   end
 
   resource "certifi" do
