@@ -23,3 +23,10 @@ python generate_resources.py ../rl-cli/requirements.txt
 brew install --build-from-source --force ./Formula/rl-cli.rb
 ```
 
+## To update resource versions
+
+NOTE: this will update these resources to most recent and disregard the requirements.txt
+
+```bash
+brew update-python-resources ./Formula/rl-cli.rb
+```
