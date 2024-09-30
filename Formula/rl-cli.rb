@@ -96,6 +96,9 @@ class RlCli < Formula
 
   def install
     virtualenv_install_with_resources
+    
+    # Post-install check
+    system "#{libexec}/bin/python", "-c", "import pydantic_core"
   end
 
   test do
