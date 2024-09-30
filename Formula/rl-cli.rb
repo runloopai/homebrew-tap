@@ -13,7 +13,8 @@ class RlCli < Formula
     url "https://files.pythonhosted.org/packages/ea/cd/9db6d02626d4244258bf4368a979335ef8b9ab4df4b6725d00f0e855c345/runloop_api_client-0.1.0a20.tar.gz"
     sha256 "21f830549ce8ab090ac73a5fe17e2f0635bd5717849334164e26daa3b54ba628"
   end
-    resource "annotated-types" do
+
+  resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl"
     sha256 "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
   end
@@ -63,10 +64,10 @@ class RlCli < Formula
     sha256 "73ee9fddd406dc318b885c7a2eab8a6472b68b8fb5ba8150949fc3db939f23c8"
   end
 
-  resource "pydantic-core" do
-    url "https://files.pythonhosted.org/packages/73/73/0c7265903f66cce39ed7ca939684fba344210cefc91ccc999cfd5b113fd3/pydantic_core-2.20.1-pp310-pypy310_pp73-macosx_10_12_x86_64.whl"
-    sha256 "a45f84b09ac9c3d35dfcf6a27fd0634d30d183205230a0ebe8373a0e8cfa0906"
-  end
+  # resource "pydantic-core" do
+  #   url "https://files.pythonhosted.org/packages/73/73/0c7265903f66cce39ed7ca939684fba344210cefc91ccc999cfd5b113fd3/pydantic_core-2.20.1-pp310-pypy310_pp73-macosx_10_12_x86_64.whl"
+  #   sha256 "a45f84b09ac9c3d35dfcf6a27fd0634d30d183205230a0ebe8373a0e8cfa0906"
+  # end
 
   resource "requests" do
     url "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl"
